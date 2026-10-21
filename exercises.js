@@ -50,7 +50,9 @@ window.EXERCISES = [
     equipment: "A couch",
     sided: true,
     blurb: "Feet on the couch. The other foot hovers just above the heel.",
-    videoQuery: "single leg elevated glute bridge feet on bench physical therapy",
+    videoId: "I7Zwyzr8COk",
+    credit: "Theory of Motion Exercise Library",
+    videoNote: "Feet stay up on the couch or bench. Keep the free foot just above the heel, rather than lifting that leg high.",
     steps: [
       "Lie on your back with your feet up on the couch, at couch height.",
       "Leave one foot on the couch. Lift the other foot so it sits just above that heel.",
@@ -69,7 +71,9 @@ window.EXERCISES = [
     equipment: "A chair nearby if you want a hand on it",
     sided: true,
     blurb: "Lean the chest down and feel the back of the thigh.",
-    videoQuery: "standing hamstring stretch hinge physical therapy",
+    videoId: "SeKKQg3HVYA",
+    credit: "VIGEO",
+    videoNote: "Hinge at the hips and lean the chest forward. A chair is there if you want a hand on it.",
     steps: [
       "Stand tall, one foot slightly forward, that knee soft.",
       "Hinge at the hips and lean your chest down toward the front thigh, back long.",
@@ -446,7 +450,9 @@ window.EXERCISES = [
     equipment: "A loop band and a doorframe",
     sided: false,
     blurb: "Band in a circle in the door. Stand close and pull the leg straight.",
-    videoQuery: "banded terminal knee extension door anchor physical therapy",
+    videoId: "xdKm8PSX438",
+    credit: "E3 Rehab Exercise Library",
+    videoNote: "The band sits behind the knee. Looping it in the doorframe is the same motion as the anchor in this clip. Hold 5 seconds.",
     steps: [
       "Put the band in a circle and shut it in the doorframe so it stays put.",
       "Stand close to the door and put the working leg in the band.",

@@ -1,4 +1,4 @@
-const CACHE = "cuesheet-v2";
+const CACHE = "cuesheet-v3";
 const FILES = [
   "./",
   "./index.html",

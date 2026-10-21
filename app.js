@@ -1,9 +1,11 @@
 const REGIONS = ["All", "Back", "Core", "Hip", "Knee", "Shoulder", "Neck", "Ankle", "Balance"];
-const PROGRAM_ID = "knee-oct-21";
+const PROGRAM_ID = "knee-oct-21c";
 const PROGRAM = [
   "elevated-glute-bridge",
   "terminal-knee-extension",
-  "hamstring-lean",
+  "hamstring-lean"
+];
+const DROPPED = [
   "ankle-pumps",
   "calf-stretch",
   "heel-prop",
@@ -37,9 +39,9 @@ function loadStore() {
   } catch (err) { /* fresh sheet */ }
   if (!store) store = { plan: [], custom: [], log: {}, installDismissed: false };
   if (store.programId !== PROGRAM_ID) {
-    const kept = new Map(store.plan.map((item) => [item.id, item]));
+    const kept = new Map(store.plan.filter((item) => !DROPPED.includes(item.id)).map((item) => [item.id, item]));
     const program = PROGRAM.map((id) => kept.get(id) || { id, dose: sheetDose(id) });
-    const extras = store.plan.filter((item) => !PROGRAM.includes(item.id));
+    const extras = store.plan.filter((item) => !PROGRAM.includes(item.id) && !DROPPED.includes(item.id));
     store.plan = program.concat(extras);
     store.programId = PROGRAM_ID;
     localStorage.setItem(KEY, JSON.stringify(store));
